@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompleteCell" rowHeight="116" id="IEd-Me-bzw" userLabel="CompleteCell" customClass="CompleteCell" customModule="lyie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IEd-Me-bzw" id="vK0-Ec-cDc">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOS-Oa-RKQ">
+                        <rect key="frame" x="123.5" y="2" width="130" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPD-ww-S1Z">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="IEd-Me-bzw" eventType="touchUpInside" id="0Yj-21-Q4M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qPD-ww-S1Z" secondAttribute="trailing" id="AYM-T2-P20"/>
+                            <constraint firstAttribute="width" constant="130" id="JqC-8v-g9e"/>
+                            <constraint firstAttribute="height" constant="40" id="Nip-KI-cE0"/>
+                            <constraint firstAttribute="bottom" secondItem="qPD-ww-S1Z" secondAttribute="bottom" id="btu-kU-5Ta"/>
+                            <constraint firstItem="qPD-ww-S1Z" firstAttribute="top" secondItem="VOS-Oa-RKQ" secondAttribute="top" id="d8u-U3-a7l"/>
+                            <constraint firstItem="qPD-ww-S1Z" firstAttribute="leading" secondItem="VOS-Oa-RKQ" secondAttribute="leading" id="q5e-x6-bXB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="VOS-Oa-RKQ" firstAttribute="top" secondItem="vK0-Ec-cDc" secondAttribute="top" constant="2" id="BNi-XW-swX"/>
+                    <constraint firstItem="VOS-Oa-RKQ" firstAttribute="centerX" secondItem="vK0-Ec-cDc" secondAttribute="centerX" id="pSJ-Ya-v4S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="buttonView" destination="qPD-ww-S1Z" id="Wes-l5-BEk"/>
+            </connections>
+            <point key="canvasLocation" x="34.057971014492757" y="14.0625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

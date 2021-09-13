@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "3. Hafta-Nesnelerin İnterneti.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "3. Hafta-Nesnelerin İnterneti-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "3. Hafta-Nesnelerin İnterneti-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

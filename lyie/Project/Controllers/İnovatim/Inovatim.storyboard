@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ggx-mV-KAO">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inovatim-->
+        <scene sceneID="IcA-XS-5kM">
+            <objects>
+                <navigationController title="Inovatim" automaticallyAdjustsScrollViewInsets="NO" id="Ggx-mV-KAO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guide" image="dashboard/guideOff" id="FX9-cZ-aAZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jsn-g3-6LE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="txx-FK-NhX" kind="relationship" relationship="rootViewController" id="x0U-md-1W5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ba7-dO-Rsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3748" y="-79"/>
+        </scene>
+        <!--Inovatim-->
+        <scene sceneID="fOI-Ba-Lwj">
+            <objects>
+                <viewController storyboardIdentifier="InovatimController" title="Inovatim" useStoryboardIdentifierAsRestorationIdentifier="YES" id="txx-FK-NhX" customClass="InovatimController" customModule="lyie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBV-xf-q4z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVt-hP-PYB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zgd-2k-UqP">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="638"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="txx-FK-NhX" id="MlT-Qa-bxu"/>
+                                    <outlet property="delegate" destination="txx-FK-NhX" id="Xgo-wc-wd5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="06B-vR-czG"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zgd-2k-UqP" firstAttribute="trailing" secondItem="06B-vR-czG" secondAttribute="trailing" id="3k4-QH-BL7"/>
+                            <constraint firstItem="Zgd-2k-UqP" firstAttribute="top" secondItem="06B-vR-czG" secondAttribute="top" constant="-20" id="WSA-30-jTM"/>
+                            <constraint firstItem="Zgd-2k-UqP" firstAttribute="leading" secondItem="06B-vR-czG" secondAttribute="leading" id="dD3-7g-hFk"/>
+                            <constraint firstItem="Zgd-2k-UqP" firstAttribute="bottom" secondItem="06B-vR-czG" secondAttribute="bottom" id="jAa-QK-PvA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inovatim" image="Home/homepage" selectedImage="Home/homepageActive" id="NyQ-rR-Fvy"/>
+                    <navigationItem key="navigationItem" id="cI4-s0-leg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainView" destination="aVt-hP-PYB" id="BvH-bO-QFQ"/>
+                        <outlet property="myTableView" destination="Zgd-2k-UqP" id="3GQ-mw-3dW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDL-ML-AKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2988" y="-80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home/homepage" width="22" height="21"/>
+        <image name="Home/homepageActive" width="22" height="21"/>
+        <image name="dashboard/guideOff" width="19" height="18"/>
+    </resources>
+</document>

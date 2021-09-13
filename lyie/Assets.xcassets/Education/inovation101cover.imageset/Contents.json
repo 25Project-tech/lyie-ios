@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "inovasyon 101 kapak foto-2.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "inovasyon 101 kapak foto-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "inovasyon 101 kapak foto.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

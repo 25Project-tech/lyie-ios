@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InovatimLogoCell" rowHeight="80" id="DZQ-wF-zZz" userLabel="InovatimLogoCell" customClass="InovatimLogoCell" customModule="lyie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DZQ-wF-zZz" id="ucG-7e-8DK">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUF-9E-X6n">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpj-fm-pqR">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80z-gF-bwU">
+                                        <rect key="frame" x="124" y="30" width="130" height="45"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dashboard/inovatim" translatesAutoresizingMaskIntoConstraints="NO" id="y9T-YR-obr">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="45"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="y9T-YR-obr" firstAttribute="leading" secondItem="80z-gF-bwU" secondAttribute="leading" id="3eZ-9z-mg1"/>
+                                            <constraint firstItem="y9T-YR-obr" firstAttribute="top" secondItem="80z-gF-bwU" secondAttribute="top" id="7uw-uW-u1T"/>
+                                            <constraint firstAttribute="height" constant="45" id="GFs-xe-hk4"/>
+                                            <constraint firstAttribute="bottom" secondItem="y9T-YR-obr" secondAttribute="bottom" id="QLW-3c-E9j"/>
+                                            <constraint firstAttribute="trailing" secondItem="y9T-YR-obr" secondAttribute="trailing" id="cYM-Z7-78b"/>
+                                            <constraint firstAttribute="width" constant="130" id="vLb-HH-6cE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="80z-gF-bwU" firstAttribute="centerX" secondItem="tpj-fm-pqR" secondAttribute="centerX" id="8I3-UM-Y7t"/>
+                                    <constraint firstAttribute="height" constant="50" id="8U0-5R-3Dl"/>
+                                    <constraint firstItem="80z-gF-bwU" firstAttribute="top" secondItem="tpj-fm-pqR" secondAttribute="top" constant="30" id="Lmi-03-9sL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156231399999999" green="0.92156249280000002" blue="0.92156094310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tpj-fm-pqR" secondAttribute="trailing" id="Fd2-gm-Nvj"/>
+                            <constraint firstItem="tpj-fm-pqR" firstAttribute="leading" secondItem="nUF-9E-X6n" secondAttribute="leading" id="HQI-7e-CrU"/>
+                            <constraint firstItem="tpj-fm-pqR" firstAttribute="top" secondItem="nUF-9E-X6n" secondAttribute="top" id="t4v-94-heI"/>
+                            <constraint firstAttribute="height" constant="80" id="yoX-fm-Nbc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nUF-9E-X6n" firstAttribute="leading" secondItem="ucG-7e-8DK" secondAttribute="leading" id="6Jl-iI-AwM"/>
+                    <constraint firstItem="nUF-9E-X6n" firstAttribute="top" secondItem="ucG-7e-8DK" secondAttribute="top" id="9O4-DK-8BC"/>
+                    <constraint firstAttribute="bottom" secondItem="nUF-9E-X6n" secondAttribute="bottom" id="BM8-st-Oew"/>
+                    <constraint firstAttribute="trailing" secondItem="nUF-9E-X6n" secondAttribute="trailing" id="ijG-aa-72x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="logoIcon" destination="y9T-YR-obr" id="yUJ-HU-GvM"/>
+                <outlet property="logoView" destination="80z-gF-bwU" id="iKT-if-0S9"/>
+                <outlet property="mainView" destination="nUF-9E-X6n" id="8IJ-LO-hpc"/>
+                <outlet property="shadowView" destination="tpj-fm-pqR" id="liP-Mh-lWm"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="2.0089285714285712"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Dashboard/inovatim" width="4972" height="3543"/>
+    </resources>
+</document>

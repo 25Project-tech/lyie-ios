@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScoreListCell" rowHeight="650" id="3JS-Jw-wkv" userLabel="ScoreListCell" customClass="ScoreListCell" customModule="lyie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="494" height="650"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3JS-Jw-wkv" id="Ust-tN-9Zy">
+                <rect key="frame" x="0.0" y="0.0" width="494" height="650"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsV-W6-YfR">
+                        <rect key="frame" x="20" y="0.0" width="454" height="600"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-hJ-OdN">
+                                <rect key="frame" x="0.0" y="0.0" width="454" height="600"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-qZ-NhY">
+                                        <rect key="frame" x="0.0" y="0.0" width="454" height="600"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ge4-qZ-NhY" secondAttribute="trailing" id="Hmi-0w-PjX"/>
+                                    <constraint firstItem="ge4-qZ-NhY" firstAttribute="leading" secondItem="cYV-hJ-OdN" secondAttribute="leading" id="Tft-RB-Nuh"/>
+                                    <constraint firstAttribute="bottom" secondItem="ge4-qZ-NhY" secondAttribute="bottom" id="iKG-IT-RyR"/>
+                                    <constraint firstItem="ge4-qZ-NhY" firstAttribute="top" secondItem="cYV-hJ-OdN" secondAttribute="top" id="wtO-Bh-MSB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cYV-hJ-OdN" firstAttribute="top" secondItem="EsV-W6-YfR" secondAttribute="top" id="3M6-o8-S73"/>
+                            <constraint firstAttribute="bottom" secondItem="cYV-hJ-OdN" secondAttribute="bottom" id="ajB-M1-mbG"/>
+                            <constraint firstAttribute="trailing" secondItem="cYV-hJ-OdN" secondAttribute="trailing" id="mCO-VB-M1A"/>
+                            <constraint firstAttribute="height" constant="600" id="nb5-Po-A3g"/>
+                            <constraint firstItem="cYV-hJ-OdN" firstAttribute="leading" secondItem="EsV-W6-YfR" secondAttribute="leading" id="tKk-Sn-ys9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="EsV-W6-YfR" firstAttribute="leading" secondItem="Ust-tN-9Zy" secondAttribute="leading" constant="20" id="6pk-ZK-C5Y"/>
+                    <constraint firstItem="EsV-W6-YfR" firstAttribute="top" secondItem="Ust-tN-9Zy" secondAttribute="top" id="tDE-lh-I0q"/>
+                    <constraint firstAttribute="trailing" secondItem="EsV-W6-YfR" secondAttribute="trailing" constant="20" id="udV-oh-tXk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="mainView" destination="EsV-W6-YfR" id="wv2-5A-caF"/>
+                <outlet property="scoreTableView" destination="ge4-qZ-NhY" id="BSb-gc-ppX"/>
+            </connections>
+            <point key="canvasLocation" x="30.434782608695656" y="130.58035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+/* 
+  InfoPlist.strings
+ //  NewProject
+ //
+ //  Created by Sevcan Eşim on 14.11.2020.
+ //  Copyright © 2020 Sevcan Esim. All rights reserved.
+*/
+
+NSCameraUsageDescription = "Allow InovaTIM LYIE App access to photos so that you can change your profile photo or share the photo.";
+NSPhotoLibraryAddUsageDescription = "Allow InovaTIM LYIE App access to photos so that you can change your profile photo or share the photo.";
+NSPhotoLibraryUsageDescription ="Allow InovaTIM LYIE App access to photos so that you can change your profile photo or share the photo.";
+NSLocationAlwaysUsageDescription = "Allow İnovaTİM LYİE to get your location to show on map.";
+NSLocationAlwaysAndWhenInUseUsageDescription = "Allow İnovaTİM LYİE to get your location to show on map.";
+NSLocationWhenInUseUsageDescription = "Allow İnovaTİM LYİE to get your location to show on map.";
+

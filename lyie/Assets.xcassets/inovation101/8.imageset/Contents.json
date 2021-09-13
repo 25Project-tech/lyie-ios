@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "1. Hafta-Endüstri 4.0'a Giriş.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "1. Hafta-Endüstri 4.0'a Giriş-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "1. Hafta-Endüstri 4.0'a Giriş-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

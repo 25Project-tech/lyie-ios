@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HorizontalViewController" customModule="lyie" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="ju6-AW-DJ1" id="hs3-eM-Vb8"/>
+                <outlet property="mainView" destination="SNS-9Z-UdL" id="dRn-O2-JO7"/>
+                <outlet property="playButtonView" destination="M9E-sh-w6E" id="XkL-bC-eCd"/>
+                <outlet property="videoPlayer" destination="iYq-Fs-iTK" id="LEa-hz-ph9"/>
+                <outlet property="view" destination="lxd-AO-pHR" id="vVa-Bt-tgc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lxd-AO-pHR">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="554"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-9Z-UdL">
+                    <rect key="frame" x="0.0" y="0.0" width="357" height="554"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSp-so-hwB">
+                            <rect key="frame" x="-10" y="0.0" width="377" height="554"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-Fs-iTK" customClass="ASPVideoPlayerView" customModule="ASPVideoPlayer">
+                                    <rect key="frame" x="0.0" y="0.0" width="377" height="554"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9E-sh-w6E">
+                                    <rect key="frame" x="163.5" y="252" width="50" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoIcon/play" translatesAutoresizingMaskIntoConstraints="NO" id="ju6-AW-DJ1">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ju6-AW-DJ1" secondAttribute="trailing" id="1vL-Fh-uOY"/>
+                                        <constraint firstItem="ju6-AW-DJ1" firstAttribute="top" secondItem="M9E-sh-w6E" secondAttribute="top" id="GnJ-1g-20B"/>
+                                        <constraint firstItem="ju6-AW-DJ1" firstAttribute="leading" secondItem="M9E-sh-w6E" secondAttribute="leading" id="ZZu-gF-WYE"/>
+                                        <constraint firstAttribute="width" constant="50" id="aar-aT-0xs"/>
+                                        <constraint firstAttribute="bottom" secondItem="ju6-AW-DJ1" secondAttribute="bottom" id="enj-co-PVv"/>
+                                        <constraint firstAttribute="height" constant="50" id="zlO-SY-Cpw"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzn-5v-696">
+                                    <rect key="frame" x="0.0" y="0.0" width="377" height="554"/>
+                                    <connections>
+                                        <action selector="tappedVideoPlayer:" destination="-1" eventType="touchUpInside" id="PSs-nl-eZM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="M9E-sh-w6E" firstAttribute="centerY" secondItem="BSp-so-hwB" secondAttribute="centerY" id="3DF-AH-pXG"/>
+                                <constraint firstItem="iYq-Fs-iTK" firstAttribute="leading" secondItem="BSp-so-hwB" secondAttribute="leading" id="9Hv-lU-vU5"/>
+                                <constraint firstAttribute="trailing" secondItem="Hzn-5v-696" secondAttribute="trailing" id="DAc-20-MFc"/>
+                                <constraint firstItem="Hzn-5v-696" firstAttribute="leading" secondItem="BSp-so-hwB" secondAttribute="leading" id="NAF-LF-Lwd"/>
+                                <constraint firstAttribute="trailing" secondItem="iYq-Fs-iTK" secondAttribute="trailing" id="PC6-bh-n0P"/>
+                                <constraint firstItem="iYq-Fs-iTK" firstAttribute="top" secondItem="BSp-so-hwB" secondAttribute="top" id="QLq-4I-3WC"/>
+                                <constraint firstAttribute="bottom" secondItem="iYq-Fs-iTK" secondAttribute="bottom" id="Tz9-Ib-8aH"/>
+                                <constraint firstItem="M9E-sh-w6E" firstAttribute="centerX" secondItem="BSp-so-hwB" secondAttribute="centerX" id="Uhc-lJ-FXD"/>
+                                <constraint firstAttribute="bottom" secondItem="Hzn-5v-696" secondAttribute="bottom" id="b88-a4-21s"/>
+                                <constraint firstItem="Hzn-5v-696" firstAttribute="top" secondItem="BSp-so-hwB" secondAttribute="top" id="f8f-n6-XCu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="BSp-so-hwB" firstAttribute="top" secondItem="SNS-9Z-UdL" secondAttribute="top" id="4bV-CL-w2N"/>
+                        <constraint firstItem="BSp-so-hwB" firstAttribute="leading" secondItem="SNS-9Z-UdL" secondAttribute="leading" constant="-10" id="5y7-Va-O8h"/>
+                        <constraint firstAttribute="height" constant="554" id="FZQ-el-VIT"/>
+                        <constraint firstAttribute="trailing" secondItem="BSp-so-hwB" secondAttribute="trailing" constant="-10" id="L9m-Z6-DqN"/>
+                        <constraint firstAttribute="width" constant="357" id="gkY-jv-GGi"/>
+                        <constraint firstAttribute="bottom" secondItem="BSp-so-hwB" secondAttribute="bottom" id="qVi-Wf-lmS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="bjZ-V3-Qm6"/>
+            <constraints>
+                <constraint firstItem="bjZ-V3-Qm6" firstAttribute="bottom" secondItem="SNS-9Z-UdL" secondAttribute="bottom" id="I57-72-DAO"/>
+                <constraint firstItem="SNS-9Z-UdL" firstAttribute="leading" secondItem="lxd-AO-pHR" secondAttribute="leading" id="XJg-BX-JY6"/>
+                <constraint firstItem="SNS-9Z-UdL" firstAttribute="top" secondItem="lxd-AO-pHR" secondAttribute="top" id="c4Q-R7-agJ"/>
+                <constraint firstItem="bjZ-V3-Qm6" firstAttribute="trailing" secondItem="SNS-9Z-UdL" secondAttribute="trailing" id="suH-SO-huA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="39.855072463768117" y="386.38392857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="videoIcon/play" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+
+//MARK: - First Page - Login User Type
+"highSLoginText" = "İnovaTİM Lise Öğrencisi Girişi";
+"mentorLoginText" = "İnovaTİM Mentor Girişi";
+"inovatimLoginText" = "Kullanıcı Girişi";;
+
+//MARK: - Login
+"id" = "İnovatim ID";
+"password" = "Şifre";
+"forget_password" = "Şifremi Unuttum";
+"login" = "Giriş Yap";
+"or" = "------------ ya da ------------";
+
+"register" = "Sign Up";
+"error_email_not_valid" = "Please type a valid email";
+"error_name_not_valid" = "Please type a valid name";
+"error_surname_not_valid" = "Please type a valid surname";
+"error_password_contains_number" = "Password must contain number";
+"error_password_contains_uppercase" = "Password must contain at least 1 uppercase character";
+"error_password_contains_special_char" = "Password must contain at least 1 special character";
+"error_password_contains_length" = "Password cannot be less than 8 characters";
+"error_password_dont_match" = "Passwords do not match, please retype";
+"user_activation_already_activated" = "User is already activated";
+"user_activation_generic_error" = "Activation problem.Please try again later.";
+"error_password_not_found" = "Password field cannot be empty";
+"error_name_not_found" = "Name field cannot be empty";
+"error_surname_not_found" = "Surname field cannot be empty";
+"error_email_not_found" = "Email field cannot be empty";
+"change_password_title" = "Change Password";
+"change_password_success" = "Change password success";
+"change_password_old_password_incorrect" = "Old password is incorrect.Please try again.";
+"placeholder_current_password" = "Current password";
+"placeholder_new_password" = "New password";
+"placeholder_new_password_re" = "New password again";
+
+//MARK: - Alert
+"internet_connection" = "Please check your internet connection";
+"error_occured" = "An error occured.Please try again later";
+
+//MARK: - Tabbar
+"tab1" = "Home";
+"tab2" = "Profile";
+"tab3" = "Education";
+"tab4" = "Researches";
+"tab5" = "Ozgelecek";
+"tab6" = "Inovatim";
+
+"male" = "Male";
+"female" = "Female";
+"other" = "Other";

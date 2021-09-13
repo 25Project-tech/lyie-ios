@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZE-uS-A3q">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ozgelecek-->
+        <scene sceneID="skz-cP-QPL">
+            <objects>
+                <navigationController title="Ozgelecek" automaticallyAdjustsScrollViewInsets="NO" id="LZE-uS-A3q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guide" image="dashboard/guideOff" id="PSo-E2-rwc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f8w-3e-XuN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xej-pL-dFR" kind="relationship" relationship="rootViewController" id="Zvc-gk-sdw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIY-k7-ycF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3748" y="-79"/>
+        </scene>
+        <!--Ozgelecek-->
+        <scene sceneID="diD-21-3pV">
+            <objects>
+                <viewController storyboardIdentifier="OzgelecekController" title="Ozgelecek" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xej-pL-dFR" customClass="OzgelecekController" customModule="lyie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sj-Tl-Ae6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19h-ac-zSC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dhP-Li-lgG">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="638"/>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xej-pL-dFR" id="WaJ-zq-06e"/>
+                                    <outlet property="delegate" destination="xej-pL-dFR" id="1VI-4J-ins"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PFn-Al-nHK"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dhP-Li-lgG" firstAttribute="trailing" secondItem="PFn-Al-nHK" secondAttribute="trailing" id="4cL-up-2gQ"/>
+                            <constraint firstItem="19h-ac-zSC" firstAttribute="trailing" secondItem="PFn-Al-nHK" secondAttribute="trailing" id="RXM-ny-6MR"/>
+                            <constraint firstItem="dhP-Li-lgG" firstAttribute="top" secondItem="PFn-Al-nHK" secondAttribute="top" constant="-20" id="SbX-hf-j1A"/>
+                            <constraint firstItem="dhP-Li-lgG" firstAttribute="leading" secondItem="PFn-Al-nHK" secondAttribute="leading" id="dmv-4x-Rwe"/>
+                            <constraint firstItem="19h-ac-zSC" firstAttribute="leading" secondItem="PFn-Al-nHK" secondAttribute="leading" id="pL1-cs-AaY"/>
+                            <constraint firstAttribute="bottom" secondItem="19h-ac-zSC" secondAttribute="bottom" id="sRW-0t-8DV"/>
+                            <constraint firstItem="dhP-Li-lgG" firstAttribute="bottom" secondItem="PFn-Al-nHK" secondAttribute="bottom" id="t38-nP-4g1"/>
+                            <constraint firstItem="19h-ac-zSC" firstAttribute="top" secondItem="PFn-Al-nHK" secondAttribute="top" id="xN0-t4-bjZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ozgelecek" image="Home/homepage" selectedImage="Home/homepageActive" id="Gaf-qO-1NJ"/>
+                    <navigationItem key="navigationItem" id="hSA-Bx-tOg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mainView" destination="19h-ac-zSC" id="dLs-4H-q1K"/>
+                        <outlet property="myTableView" destination="dhP-Li-lgG" id="CXJ-vX-wPE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="To4-bp-Eyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2988" y="-80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home/homepage" width="22" height="21"/>
+        <image name="Home/homepageActive" width="22" height="21"/>
+        <image name="dashboard/guideOff" width="19" height="18"/>
+    </resources>
+</document>

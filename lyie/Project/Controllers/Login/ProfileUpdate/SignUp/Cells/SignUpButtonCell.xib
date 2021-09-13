@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignUpButtonCell" rowHeight="116" id="Jzm-xm-u6X" userLabel="SignUpButtonCell" customClass="SignUpButtonCell" customModule="lyie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jzm-xm-u6X" id="pJV-76-NDk">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5k-C4-pJy">
+                        <rect key="frame" x="217" y="30" width="130" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkJ-4X-W3s">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="Jzm-xm-u6X" eventType="touchUpInside" id="UQb-9h-vSD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="BkJ-4X-W3s" firstAttribute="top" secondItem="E5k-C4-pJy" secondAttribute="top" id="0zb-NN-eQu"/>
+                            <constraint firstAttribute="trailing" secondItem="BkJ-4X-W3s" secondAttribute="trailing" id="1NX-yj-YsM"/>
+                            <constraint firstAttribute="width" constant="130" id="73V-oJ-hHD"/>
+                            <constraint firstItem="BkJ-4X-W3s" firstAttribute="leading" secondItem="E5k-C4-pJy" secondAttribute="leading" id="VMm-3P-nFz"/>
+                            <constraint firstAttribute="height" constant="40" id="WAC-SJ-XTY"/>
+                            <constraint firstAttribute="bottom" secondItem="BkJ-4X-W3s" secondAttribute="bottom" id="eCD-f6-Wvs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDR-s0-gM7">
+                        <rect key="frame" x="30" y="30" width="130" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jth-nG-KMt">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Jzm-xm-u6X" eventType="touchUpInside" id="Ke9-42-l6V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="8E7-ZL-AN9"/>
+                            <constraint firstAttribute="bottom" secondItem="jth-nG-KMt" secondAttribute="bottom" id="9VW-Q1-Wyy"/>
+                            <constraint firstAttribute="trailing" secondItem="jth-nG-KMt" secondAttribute="trailing" id="LYc-Rw-6mi"/>
+                            <constraint firstAttribute="height" constant="40" id="fc9-Ax-s6c"/>
+                            <constraint firstItem="jth-nG-KMt" firstAttribute="leading" secondItem="IDR-s0-gM7" secondAttribute="leading" id="khu-Kp-ofn"/>
+                            <constraint firstItem="jth-nG-KMt" firstAttribute="top" secondItem="IDR-s0-gM7" secondAttribute="top" id="zmI-PH-jFv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="IDR-s0-gM7" firstAttribute="leading" secondItem="pJV-76-NDk" secondAttribute="leading" constant="30" id="CCa-7i-a4g"/>
+                    <constraint firstAttribute="trailing" secondItem="E5k-C4-pJy" secondAttribute="trailing" constant="30" id="Fxd-Tl-hFZ"/>
+                    <constraint firstItem="IDR-s0-gM7" firstAttribute="top" secondItem="pJV-76-NDk" secondAttribute="top" constant="30" id="REV-1N-8UB"/>
+                    <constraint firstItem="E5k-C4-pJy" firstAttribute="top" secondItem="pJV-76-NDk" secondAttribute="top" constant="30" id="efN-Y8-b9B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="backButton" destination="jth-nG-KMt" id="fYa-ge-SAW"/>
+                <outlet property="backButtonView" destination="IDR-s0-gM7" id="KOb-Ov-M6b"/>
+                <outlet property="buttonView" destination="BkJ-4X-W3s" id="ksM-kx-NbC"/>
+            </connections>
+            <point key="canvasLocation" x="34.057971014492757" y="14.0625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

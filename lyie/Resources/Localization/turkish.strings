@@ -1,0 +1,49 @@
+
+//MARK: - First Page - Login User Type
+"highSLoginText" = "İnovaTİM Lise Öğrencisi Girişi";
+"mentorLoginText" = "İnovaTİM Mentor Girişi";
+"inovatimLoginText" = "Kullanıcı Girişi";
+
+//MARK: - Login
+"id" = "İnovatim ID";
+"password" = "Şifre";
+"forget_password" = "Şifremi Unuttum";
+"login" = "Giriş Yap";
+"or" = "------------ ya da ------------";
+
+"register" = "Kayıt Ol";
+"error_email_not_valid" = "Lütfen geçerli bir email yazınız";
+"error_name_not_valid" = "Lütfen geçerli bir ad yazınız";
+"error_surname_not_valid" = "Lütfen geçerli bir soyad yazınız";
+"error_password_contains_number" = "Şifre sayı içermeli";
+"error_password_contains_uppercase" = "Şifre en az 1 büyük karakter içermeli";
+"error_password_contains_special_char" = "Şifre en az 1 özel karakter içermeli";
+"error_password_contains_length" = "Şifre 8 karakterden kısa olamaz";
+"error_password_dont_match" = "Şifreler eşleşmiyor, lütfen yeniden yazın";
+"user_activation_already_activated" = "Kullanıcınız daha önce aktifleştirilmiş";
+"user_activation_generic_error" = "Aktivaston problemi.Lütfen daha sonra tekrar deneyiniz.";
+"error_password_not_found" = "Şifre boş bırakılamaz";
+"error_name_not_found" = "Ad boş bırakılamaz";
+"error_surname_not_found" = "Soyad boş bırakılamaz";
+"error_email_not_found" = "Email boş bırakılamaz";
+"change_password_title" = "Şifrenizi yenileyin";
+"change_password_success" = "Şifreniz başarıyla değiştirildi.";
+"change_password_old_password_incorrect" = "Eski şifreniz doğru değil.Lütfen tekrar deneyiniz.";
+"placeholder_current_password" = "Mevcut şifre";
+"placeholder_new_password" = "Yeni şifre";
+"placeholder_new_password_re" = "Yeni şifre tekrar";
+
+//MARK: - Alert
+"internet_connection" = "Lütfen internet bağlantınızı kontrol edin";
+"error_occured" = "Bir hata oluştu.Lütfen daha sonra tekrar deneyin";
+
+//MARK: - Tabbar
+"tab1" = "AnaSayfa";
+"tab2" = "Profil";
+"tab3" = "Eğitimler";
+"tab4" = "Araştırmalar";
+"tab5" = "Ozgelecek";
+"tab6" = "Inovatim";
+
+"male" = "Erkek";
+"female" = "Kadın";

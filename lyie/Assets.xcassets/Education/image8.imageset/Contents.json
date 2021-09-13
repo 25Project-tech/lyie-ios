@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "1368+1800-icat-nedir.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "1368+1800-icat-nedir-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "1368+1800-icat-nedir-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

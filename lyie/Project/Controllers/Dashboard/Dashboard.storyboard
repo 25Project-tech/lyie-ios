@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FK1-ht-SpT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard Controller-->
+        <scene sceneID="Cyx-Gx-ytc">
+            <objects>
+                <tabBarController storyboardIdentifier="DashboardController" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FK1-ht-SpT" customClass="DashboardController" customModule="lyie" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="d35-Cp-EZF"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="STY-HP-tgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5GI-C9-ciV" kind="relationship" relationship="viewControllers" id="kB8-Lv-gEN"/>
+                        <segue destination="u4e-V1-oyV" kind="relationship" relationship="viewControllers" id="SZX-ma-svB"/>
+                        <segue destination="vsO-aI-krf" kind="relationship" relationship="viewControllers" id="8g4-gH-Grg"/>
+                        <segue destination="rpb-gi-WYo" kind="relationship" relationship="viewControllers" id="cUV-di-scp"/>
+                        <segue destination="hCE-uN-3K5" kind="relationship" relationship="viewControllers" id="ifO-3h-MB2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRK-pR-cVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2034" y="806"/>
+        </scene>
+        <!--HomePage-->
+        <scene sceneID="SBT-jf-jKf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomePage" id="5GI-C9-ciV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home Page" image="Tabbar/anasayfa" id="6SV-Uf-7RT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWp-Tx-vE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-827" y="665"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="2V5-53-MxW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="u4e-V1-oyV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Tabbar/profil" id="Pil-zi-0MO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Paz-qP-2Hq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-827" y="757"/>
+        </scene>
+        <!--Education-->
+        <scene sceneID="Aoy-p5-rQh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Education" id="vsO-aI-krf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Tabbar/egitimler" id="JEJ-5b-fg3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bkc-ke-ehc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="706"/>
+        </scene>
+        <!--Mentor-->
+        <scene sceneID="8NX-Fn-mFU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Mentor" id="rpb-gi-WYo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Tabbar/mentor" id="C4m-eC-REg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83v-9X-avP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-835" y="867"/>
+        </scene>
+        <!--Score-->
+        <scene sceneID="nPe-1A-ruR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Score" id="hCE-uN-3K5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Tabbar/puanlarım" id="6cz-Pj-v7N"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0h-65-wc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="941"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tabbar/anasayfa" width="24.5" height="23.5"/>
+        <image name="Tabbar/egitimler" width="24.5" height="23.5"/>
+        <image name="Tabbar/mentor" width="24.5" height="23.5"/>
+        <image name="Tabbar/profil" width="24.5" height="23.5"/>
+        <image name="Tabbar/puanlarım" width="24.5" height="23.5"/>
+    </resources>
+</document>
